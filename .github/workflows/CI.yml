@@ -50,5 +50,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: "Setup"
+        name: "Setupu"
         path: "Setup - SMOO Roblox Graphic mod.exe"
