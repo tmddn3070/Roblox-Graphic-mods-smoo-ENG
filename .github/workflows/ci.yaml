@@ -50,4 +50,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: "Setup"
-        path: "smoo"
+        path: "smoo-preset
+      "
