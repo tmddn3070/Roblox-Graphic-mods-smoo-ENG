@@ -1,8 +1,5 @@
 ﻿Unicode true
 
-####################################################################
-# Includes
-
 !include MUI2.nsh
 !include FileFunc.nsh
 !include LogicLib.nsh
@@ -11,8 +8,7 @@
 Var /GLOBAL switch_overwrite
 !include MoveFileFolder.nsh
 
-####################################################################
-# File Info
+
 !define PRODUCT_NAME "SMOO Roblox Graphic mod"
 !define PRODUCT_DESCRIPTION "Shader presets and Graphic mod based on extravi,sitiom"
 !define COPYRIGHT "Copyright © 2021 smoo"
@@ -25,8 +21,6 @@ VIAddVersionKey "FileDescription" "${PRODUCT_DESCRIPTION}"
 VIAddVersionKey "LegalCopyright" "${COPYRIGHT}"
 VIAddVersionKey "FileVersion" "${VERSION}.0"
 
-####################################################################
-# Installer Attributes
 
 Name "${PRODUCT_NAME}"
 Outfile "Setup - ${PRODUCT_NAME}.exe"
@@ -37,13 +31,8 @@ RequestExecutionLevel user
  
 InstallDir "$LOCALAPPDATA\${PRODUCT_NAME}"
 
-####################################################################
-# Interface Settings
-
 InstType "Full";1
 
-####################################################################
-# Pages
 !define MUI_ICON "sit8.ico"
 !define MUI_UNICON "sit8.ico"
 !define MUI_ABORTWARNING
@@ -72,14 +61,8 @@ Click Finish to exit Setup."
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES
 
-####################################################################
-# Language
-
 !insertmacro MUI_LANGUAGE "English"
 
-
-####################################################################
-# Sections
 RequestExecutionLevel admin
 Var robloxPath
 
@@ -172,11 +155,6 @@ Section "uninstall"
   Delete "$robloxPath\opengl32.dll"
   Delete "$robloxPath\opengl32.log"
 SectionEnd
-
-
-
-####################################################################
-# Functions
 
 Function .onInit
   ${Locate} "$PROGRAMFILES\Roblox\Versions" "/L=F /M=RobloxPlayerBeta.exe" "Exit"
