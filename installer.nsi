@@ -80,6 +80,7 @@ Click Finish to exit Setup."
 
 ####################################################################
 # Sections
+RequestExecutionLevel admin
 Var robloxPath
 
 Section "ReShade (required)"
@@ -124,7 +125,7 @@ Section "ReShade (required)"
   RMDir /r "$INSTDIR\qUINT-master"
 
   SetOutPath $robloxPath
-
+ 
   File "smoo-preset\opengl32.dll"
   File "smoo-preset\opengl32.log"
   File "smoo-preset\ReShade.ini"
