@@ -44,7 +44,6 @@ InstType "Full";1
 
 ####################################################################
 # Pages
-RequestExecutionLevel admin
 !define MUI_ICON "sit8.ico"
 !define MUI_UNICON "sit8.ico"
 !define MUI_ABORTWARNING
@@ -81,7 +80,7 @@ Click Finish to exit Setup."
 
 ####################################################################
 # Sections
-
+RequestExecutionLevel admin
 Var robloxPath
 
 Section "ReShade (required)"
