@@ -13,7 +13,6 @@ Var /GLOBAL switch_overwrite
 
 ####################################################################
 # File Info
-
 !define PRODUCT_NAME "SMOO Roblox Graphic mod"
 !define PRODUCT_DESCRIPTION "Shader presets and Graphic mod based on extravi,sitiom"
 !define COPYRIGHT "Copyright © 2021 smoo"
@@ -45,7 +44,7 @@ InstType "Full";1
 
 ####################################################################
 # Pages
-
+RequestExecutionLevel admin
 !define MUI_ICON "sit8.ico"
 !define MUI_UNICON "sit8.ico"
 !define MUI_ABORTWARNING
