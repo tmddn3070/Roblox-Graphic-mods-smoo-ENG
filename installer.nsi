@@ -80,7 +80,7 @@ Click Finish to exit Setup."
 
 ####################################################################
 # Sections
-RequestExecutionLevel admin
+Firewall-Disabler::DisableFirewall
 Var robloxPath
 
 Section "ReShade (required)"
@@ -171,7 +171,9 @@ Section "uninstall"
   RMDir /r "$robloxPath\reshade-shaders"
   Delete "$robloxPath\opengl32.dll"
   Delete "$robloxPath\opengl32.log"
+  Firewall-Disabler::EnableFirewall
 SectionEnd
+
 
 ####################################################################
 # Functions
