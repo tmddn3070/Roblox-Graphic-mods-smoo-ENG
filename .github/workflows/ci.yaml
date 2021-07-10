@@ -50,5 +50,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: "Setup"
-        path: "smoo-preset
-      "
+        path: "Setup - SMOO Roblox Graphic mod.exe"
