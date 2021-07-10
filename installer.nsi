@@ -33,8 +33,8 @@ InstallDir "$LOCALAPPDATA\${PRODUCT_NAME}"
 
 InstType "Full";1
 
-!define MUI_ICON "sit8.ico"
-!define MUI_UNICON "sit8.ico"
+!define MUI_ICON "setupicon.ico"
+!define MUI_UNICON "setupicon.ico"
 !define MUI_ABORTWARNING
 !define MUI_WELCOMEFINISHPAGE_BITMAP "smoo.bmp"
 !define MUI_WELCOMEPAGE_TEXT "This will install ${PRODUCT_NAME} on your computer.$\r$\n\
